@@ -1,3 +1,8 @@
+This project is made to be useful as a determinant of the final grade in programming framework course
+This project will show data about covid-19 cases in global and/or selected country based on what user choose
+
+This project use async to fetch data from external API
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -7,7 +12,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.<br />
-Open [http://localhost:3'0''0''0'](http://localhost:3'0''0''0') to view it in the browser.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
