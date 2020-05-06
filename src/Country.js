@@ -4,7 +4,7 @@ import './App.css'
 
 const Countrycase = ({ caseData2, handlerChange}) => {
   return (
-    <div style={{display: 'flex', padding: 0.5, flexDirection: 'column'}}>
+    <div>
       <label>Pilih Negara:
         <select value={caseData2.pilihan} onChange={handlerChange}>
           {caseData2.country.map( (data1) =>

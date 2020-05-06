@@ -9,7 +9,6 @@ class App extends Component {
       country: [],
       pilihan: 'Indonesia',
       url: "https://covid19.mathdro.id/api/countries",
-      refreshing: true,
       positif: '0',
       sembuh: '0',
       meninggal: '0'
@@ -18,7 +17,6 @@ class App extends Component {
 
   async componentDidMount(){
     //Pengambilan data untuk pilihan negara
-    this.setState({ refreshing: true })
     const response = await fetch(this.state.url)
     const json = await response.json();
     this.setState({ country: json.countries.map(data => data.name) })
@@ -43,7 +41,7 @@ class App extends Component {
   render() {
     const {...rest} = this.state;
     return (
-      <div style={{display:'flex', flex: 1, flexDirection: 'column'}}>
+      <div className= 'body'>
         <Globalcases />
         <Countrycase caseData2={{...rest}} handlerChange={this.handlerChange} />
       </div>
