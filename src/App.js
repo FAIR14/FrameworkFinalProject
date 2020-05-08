@@ -36,7 +36,7 @@ class App extends Component {
           sembuh: json2.recovered.value,
           meninggal: json2.deaths.value
         })
-      )
+      ).catch(() => this.setState({ positif: null, sembuh: null, meninggal: null }) )
   }
   render() {
     const {...rest} = this.state;
